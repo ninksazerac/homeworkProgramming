@@ -3,7 +3,7 @@ int main(){
 	int i, count = 0, get_p = 0;
 	char s[50], p[3] = {1, 0, 0};
 	
-	scanf("%s", &s);
+	scanf_s("%s", &s);
 	for(i = 0; i < 50; i++){
 		count += 1;
 		if(s[i] == '\0'){
