@@ -3,10 +3,10 @@
 int main(){
 	int goal[4][4], score[4], check2[4], check3[4], swap = 0;
 	char country[4][20], teamswap[20];
-	scanf("%s %s %s %s", &country[0], &country[1], &country[2], &country[3]);
+	scanf_s("%s %s %s %s", &country[0], &country[1], &country[2], &country[3]);
 	for(int i = 0; i < 4; i++){
 		for(int j = 0; j < 4; j++){
-			scanf("%d", &goal[i][j]);
+			scanf_s("%d", &goal[i][j]);
 		}
 	}
 	
