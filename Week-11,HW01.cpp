@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-int plusN(int n);
+int plusN(int p);
 int main()
 {
- char word[20], buff;
- int i, j, k, n;
+ char word1[20], buff;
+ int i, j, k, p;
  printf("Input word : ");
- gets(word);
+ gets_s(word1);
  char* ptr;
- ptr = word;
- n = strlen(word);
+ ptr = word1;
+ p = strlen(word1);
  printf("Swap Capital And Small Letters:\n");
  while (*ptr != '\0')
  {
@@ -28,19 +28,19 @@ int main()
  }
  printf("\n");
  printf("Arrange Letters:\n");
- for (i = 0; i < n - 1; i = plusN(i))
-  for (j = i + 1; j < n; j++)
+ for (i = 0; i < p - 1; i = plusN(i))
+  for (j = i + 1; j < p; j++)
   {
-   if (toupper(word[i]) < toupper(word[j]))
+   if (toupper(word1[i]) < toupper(word1[j]))
     continue;
    else
    {
-    buff = word[i];
-    word[i] = word[j];
-    word[j] = buff;
+    buff = word1[i];
+    word1[i] = word1[j];
+    word1[j] = buff;
    }
   }
- printf("%s", word);
+ printf("%s", word1);
 
  return 0;
 }
