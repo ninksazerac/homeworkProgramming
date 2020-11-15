@@ -12,10 +12,10 @@ int main(void)
     int result;
     int i, j, op;
 
-    p[0] = sum; /* address of sum() */
-    p[1] = subtract; /* address of subtract() */
-    p[2] = mul; /* address of mul() */
-    p[3] = div; /* address of div() */
+    p[0] = sum; 
+    p[1] = subtract; 
+    p[2] = mul; 
+    p[3] = div; 
 
     printf("Enter two numbers: ");
     scanf_s("%d %d", &i, &j);
